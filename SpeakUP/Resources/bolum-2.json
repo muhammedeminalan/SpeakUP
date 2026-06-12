@@ -1,0 +1,962 @@
+{
+  "kelimeler": [
+    {
+      "id": 1,
+      "türkçe": "her",
+      "ingilizce": "every"
+    },
+    {
+      "id": 2,
+      "türkçe": "sabah",
+      "ingilizce": "morning"
+    },
+    {
+      "id": 3,
+      "türkçe": "kahve içmek",
+      "ingilizce": "drink coffee"
+    },
+    {
+      "id": 4,
+      "türkçe": "hafta sonu",
+      "ingilizce": "weekend"
+    },
+    {
+      "id": 5,
+      "türkçe": "hep",
+      "ingilizce": "always"
+    },
+    {
+      "id": 6,
+      "türkçe": "uyumak",
+      "ingilizce": "sleep"
+    },
+    {
+      "id": 7,
+      "türkçe": "akşamları",
+      "ingilizce": "in the evenings"
+    },
+    {
+      "id": 8,
+      "türkçe": "yürüyüş yapmak",
+      "ingilizce": "go for a walk"
+    },
+    {
+      "id": 9,
+      "türkçe": "abla",
+      "ingilizce": "sister"
+    },
+    {
+      "id": 10,
+      "türkçe": "ile",
+      "ingilizce": "with"
+    },
+    {
+      "id": 11,
+      "türkçe": "gıybet etmek",
+      "ingilizce": "gossip"
+    },
+    {
+      "id": 12,
+      "türkçe": "pişirmek",
+      "ingilizce": "cook"
+    },
+    {
+      "id": 13,
+      "türkçe": "bilmek",
+      "ingilizce": "know"
+    },
+    {
+      "id": 14,
+      "türkçe": "iş",
+      "ingilizce": "work / job"
+    },
+    {
+      "id": 15,
+      "türkçe": "sonra",
+      "ingilizce": "after"
+    },
+    {
+      "id": 16,
+      "türkçe": "müzik dinlemek",
+      "ingilizce": "listen to music"
+    },
+    {
+      "id": 17,
+      "türkçe": "yaz tatili",
+      "ingilizce": "summer vacation"
+    },
+    {
+      "id": 18,
+      "türkçe": "denize girmek",
+      "ingilizce": "swim in the sea"
+    },
+    {
+      "id": 19,
+      "türkçe": "hafta içi",
+      "ingilizce": "weekdays"
+    },
+    {
+      "id": 20,
+      "türkçe": "spor salonu",
+      "ingilizce": "gym"
+    },
+    {
+      "id": 21,
+      "türkçe": "market",
+      "ingilizce": "grocery store / market"
+    },
+    {
+      "id": 22,
+      "türkçe": "taze",
+      "ingilizce": "fresh"
+    },
+    {
+      "id": 23,
+      "türkçe": "sebze",
+      "ingilizce": "vegetable"
+    },
+    {
+      "id": 24,
+      "türkçe": "almak",
+      "ingilizce": "buy / get"
+    },
+    {
+      "id": 25,
+      "türkçe": "her gün",
+      "ingilizce": "every day"
+    },
+    {
+      "id": 26,
+      "türkçe": "kilo",
+      "ingilizce": "weight"
+    },
+    {
+      "id": 27,
+      "türkçe": "çok",
+      "ingilizce": "very / a lot"
+    },
+    {
+      "id": 28,
+      "türkçe": "hızlı",
+      "ingilizce": "fast"
+    },
+    {
+      "id": 29,
+      "türkçe": "yürümek",
+      "ingilizce": "walk"
+    },
+    {
+      "id": 30,
+      "türkçe": "sen",
+      "ingilizce": "you"
+    },
+    {
+      "id": 31,
+      "türkçe": "görmek",
+      "ingilizce": "see"
+    },
+    {
+      "id": 32,
+      "türkçe": "pazar",
+      "ingilizce": "bazaar"
+    },
+    {
+      "id": 33,
+      "türkçe": "otobüs",
+      "ingilizce": "bus"
+    },
+    {
+      "id": 34,
+      "türkçe": "okul",
+      "ingilizce": "school"
+    },
+    {
+      "id": 35,
+      "türkçe": "sık sık",
+      "ingilizce": "often / frequently"
+    },
+    {
+      "id": 36,
+      "türkçe": "mesaj atmak",
+      "ingilizce": "send a message"
+    },
+    {
+      "id": 37,
+      "türkçe": "dışarı",
+      "ingilizce": "outside"
+    },
+    {
+      "id": 38,
+      "türkçe": "yemek yemek",
+      "ingilizce": "eat food / have a meal"
+    },
+    {
+      "id": 39,
+      "türkçe": "-iken",
+      "ingilizce": "while"
+    },
+    {
+      "id": 40,
+      "türkçe": "dinlemek",
+      "ingilizce": "listen"
+    },
+    {
+      "id": 41,
+      "türkçe": "ders çalışmak",
+      "ingilizce": "study"
+    },
+    {
+      "id": 42,
+      "türkçe": "telefon",
+      "ingilizce": "phone"
+    },
+    {
+      "id": 43,
+      "türkçe": "taşımak",
+      "ingilizce": "carry"
+    },
+    {
+      "id": 44,
+      "türkçe": "yanında",
+      "ingilizce": "next to / beside / with"
+    },
+    {
+      "id": 45,
+      "türkçe": "duş almak",
+      "ingilizce": "take a shower"
+    },
+    {
+      "id": 46,
+      "türkçe": "bana",
+      "ingilizce": "me"
+    },
+    {
+      "id": 47,
+      "türkçe": "yardım etmek",
+      "ingilizce": "help"
+    },
+    {
+      "id": 48,
+      "türkçe": "yazları",
+      "ingilizce": "in the summers"
+    },
+    {
+      "id": 49,
+      "türkçe": "tatil köyü",
+      "ingilizce": "resort"
+    },
+    {
+      "id": 50,
+      "türkçe": "düğün",
+      "ingilizce": "wedding"
+    },
+    {
+      "id": 51,
+      "türkçe": "gelmek",
+      "ingilizce": "come"
+    },
+    {
+      "id": 52,
+      "türkçe": "yeni",
+      "ingilizce": "new"
+    },
+    {
+      "id": 53,
+      "türkçe": "şeyler",
+      "ingilizce": "things"
+    },
+    {
+      "id": 54,
+      "türkçe": "öğrenmek",
+      "ingilizce": "learn"
+    },
+    {
+      "id": 55,
+      "türkçe": "acayip",
+      "ingilizce": "strange"
+    },
+    {
+      "id": 56,
+      "türkçe": "düşünmek",
+      "ingilizce": "think"
+    },
+    {
+      "id": 57,
+      "türkçe": "siz",
+      "ingilizce": "you (plural/formal)"
+    },
+    {
+      "id": 58,
+      "türkçe": "kullanmak",
+      "ingilizce": "use"
+    },
+    {
+      "id": 59,
+      "türkçe": "su",
+      "ingilizce": "water"
+    },
+    {
+      "id": 60,
+      "türkçe": "süt",
+      "ingilizce": "milk"
+    },
+    {
+      "id": 61,
+      "türkçe": "ama",
+      "ingilizce": "but"
+    },
+    {
+      "id": 62,
+      "türkçe": "biz",
+      "ingilizce": "we"
+    },
+    {
+      "id": 63,
+      "türkçe": "aynı",
+      "ingilizce": "same"
+    },
+    {
+      "id": 64,
+      "türkçe": "kafe",
+      "ingilizce": "café"
+    },
+    {
+      "id": 65,
+      "türkçe": "bulmak",
+      "ingilizce": "find"
+    },
+    {
+      "id": 66,
+      "türkçe": "gerçek",
+      "ingilizce": "truth"
+    },
+    {
+      "id": 67,
+      "türkçe": "çocuklar",
+      "ingilizce": "children"
+    },
+    {
+      "id": 68,
+      "türkçe": "iş yeri",
+      "ingilizce": "workplace"
+    },
+    {
+      "id": 69,
+      "türkçe": "toplantı yapmak",
+      "ingilizce": "have a meeting"
+    },
+    {
+      "id": 70,
+      "türkçe": "geç saat",
+      "ingilizce": "late hour / late time"
+    },
+    {
+      "id": 71,
+      "türkçe": "-e kadar",
+      "ingilizce": "until / till"
+    },
+    {
+      "id": 72,
+      "türkçe": "çalışmak",
+      "ingilizce": "work / study"
+    },
+    {
+      "id": 73,
+      "türkçe": "seyahate çıkmak",
+      "ingilizce": "go on a trip / travel"
+    },
+    {
+      "id": 74,
+      "türkçe": "pazartesi",
+      "ingilizce": "Monday"
+    },
+    {
+      "id": 75,
+      "türkçe": "ailecek",
+      "ingilizce": "as a family / with the family"
+    },
+    {
+      "id": 76,
+      "türkçe": "helal yemek",
+      "ingilizce": "eat halal food"
+    },
+    {
+      "id": 77,
+      "türkçe": "tarla",
+      "ingilizce": "field"
+    },
+    {
+      "id": 78,
+      "türkçe": "komşu",
+      "ingilizce": "neighbor"
+    },
+    {
+      "id": 79,
+      "türkçe": "kavga",
+      "ingilizce": "fight / argument"
+    },
+    {
+      "id": 80,
+      "türkçe": "izlemek",
+      "ingilizce": "watch"
+    },
+    {
+      "id": 81,
+      "türkçe": "ev temizlemek",
+      "ingilizce": "clean the house"
+    },
+    {
+      "id": 82,
+      "türkçe": "entelektüel",
+      "ingilizce": "intellectual"
+    },
+    {
+      "id": 83,
+      "türkçe": "görünmek",
+      "ingilizce": "appear / seem"
+    },
+    {
+      "id": 84,
+      "türkçe": "bu gidişle",
+      "ingilizce": "at this rate"
+    },
+    {
+      "id": 85,
+      "türkçe": "belasını bulmak",
+      "ingilizce": "get what one deserves / meet one's doom"
+    },
+    {
+      "id": 86,
+      "türkçe": "her yıl",
+      "ingilizce": "every year"
+    },
+    {
+      "id": 87,
+      "türkçe": "millet",
+      "ingilizce": "nation / people"
+    },
+    {
+      "id": 88,
+      "türkçe": "farklı",
+      "ingilizce": "different"
+    },
+    {
+      "id": 89,
+      "türkçe": "tanımak",
+      "ingilizce": "get to know"
+    },
+    {
+      "id": 90,
+      "türkçe": "kendimizi",
+      "ingilizce": "ourselves"
+    },
+    {
+      "id": 91,
+      "türkçe": "zengin",
+      "ingilizce": "rich"
+    },
+    {
+      "id": 92,
+      "türkçe": "hissetmek",
+      "ingilizce": "feel"
+    },
+    {
+      "id": 93,
+      "türkçe": "imkansız",
+      "ingilizce": "impossible"
+    },
+    {
+      "id": 94,
+      "türkçe": "denemek",
+      "ingilizce": "try"
+    },
+    {
+      "id": 95,
+      "türkçe": "onlar",
+      "ingilizce": "they / them"
+    },
+    {
+      "id": 96,
+      "türkçe": "medya",
+      "ingilizce": "media"
+    },
+    {
+      "id": 97,
+      "türkçe": "gazete",
+      "ingilizce": "newspaper"
+    },
+    {
+      "id": 98,
+      "türkçe": "okumak",
+      "ingilizce": "read"
+    },
+    {
+      "id": 99,
+      "türkçe": "götürmek",
+      "ingilizce": "take (someone/something somewhere)"
+    },
+    {
+      "id": 100,
+      "türkçe": "her hafta",
+      "ingilizce": "every week"
+    },
+    {
+      "id": 101,
+      "türkçe": "piknik yapmak",
+      "ingilizce": "have a picnic"
+    },
+    {
+      "id": 102,
+      "türkçe": "en",
+      "ingilizce": "the most"
+    },
+    {
+      "id": 103,
+      "türkçe": "lüks",
+      "ingilizce": "luxury / luxurious"
+    },
+    {
+      "id": 104,
+      "türkçe": "hayat",
+      "ingilizce": "life"
+    },
+    {
+      "id": 105,
+      "türkçe": "yaşamak",
+      "ingilizce": "live"
+    },
+    {
+      "id": 106,
+      "türkçe": "evcil hayvan",
+      "ingilizce": "pet"
+    },
+    {
+      "id": 107,
+      "türkçe": "gezdirmek",
+      "ingilizce": "walk (a pet) / take around"
+    },
+    {
+      "id": 108,
+      "türkçe": "akşam",
+      "ingilizce": "evening"
+    },
+    {
+      "id": 109,
+      "türkçe": "kanal",
+      "ingilizce": "channel"
+    },
+    {
+      "id": 110,
+      "türkçe": "tiyatro",
+      "ingilizce": "theatre / theater"
+    },
+    {
+      "id": 111,
+      "türkçe": "bayram günleri",
+      "ingilizce": "holidays / religious holidays"
+    },
+    {
+      "id": 112,
+      "türkçe": "akraba",
+      "ingilizce": "relative"
+    },
+    {
+      "id": 113,
+      "türkçe": "ziyaret etmek",
+      "ingilizce": "visit"
+    },
+    {
+      "id": 114,
+      "türkçe": "dükkan",
+      "ingilizce": "shop / store"
+    },
+    {
+      "id": 115,
+      "türkçe": "geç",
+      "ingilizce": "late"
+    },
+    {
+      "id": 116,
+      "türkçe": "açmak",
+      "ingilizce": "open"
+    },
+    {
+      "id": 117,
+      "türkçe": "vergi ödemek",
+      "ingilizce": "pay taxes"
+    },
+    {
+      "id": 118,
+      "türkçe": "kahvehane",
+      "ingilizce": "coffeehouse / tea house"
+    },
+    {
+      "id": 119,
+      "türkçe": "buluşmak",
+      "ingilizce": "meet / get together"
+    },
+    {
+      "id": 120,
+      "türkçe": "bedel ödemek",
+      "ingilizce": "pay the price"
+    },
+    {
+      "id": 121,
+      "türkçe": "devam etmek",
+      "ingilizce": "continue"
+    },
+    {
+      "id": 122,
+      "türkçe": "yazılım",
+      "ingilizce": "software"
+    },
+    {
+      "id": 123,
+      "türkçe": "kanun",
+      "ingilizce": "law"
+    },
+    {
+      "id": 124,
+      "türkçe": "değiştirmek",
+      "ingilizce": "change"
+    }
+  ],
+  "cümleler": [
+    {
+      "id": 1,
+      "türkçe": "Ben her sabah kahve içerim.",
+      "devrik": "Ben içerim kahve her sabah.",
+      "ingilizce": "I drink coffee every morning."
+    },
+    {
+      "id": 2,
+      "türkçe": "Ben hafta sonları uyurum.",
+      "devrik": "Ben uyurum hafta sonları.",
+      "ingilizce": "I always sleep on weekends."
+    },
+    {
+      "id": 3,
+      "türkçe": "Ben akşamları yürüyüş yaparım.",
+      "devrik": "Ben yaparım yürüyüş akşamları.",
+      "ingilizce": "I go for a walk in the evenings."
+    },
+    {
+      "id": 4,
+      "türkçe": "Ben ablamla gıybet ederim.",
+      "devrik": "Ben gıybet ederim ablamla.",
+      "ingilizce": "I gossip with my sister."
+    },
+    {
+      "id": 5,
+      "türkçe": "Ben menemen pişirmeyi bilirim.",
+      "devrik": "Ben bilirim menemen pişirmeyi.",
+      "ingilizce": "I know how to cook menemen."
+    },
+    {
+      "id": 6,
+      "türkçe": "Ben işten sonra müzik dinlerim.",
+      "devrik": "Ben dinlerim müzik işten sonra.",
+      "ingilizce": "I listen to music after work."
+    },
+    {
+      "id": 7,
+      "türkçe": "Ben yaz tatillerinde denize girerim.",
+      "devrik": "Ben girerim denize yaz tatillerinde.",
+      "ingilizce": "I swim in the sea during summer vacations."
+    },
+    {
+      "id": 8,
+      "türkçe": "Ben hafta içi spor salonuna giderim.",
+      "devrik": "Ben giderim spor salonuna hafta içi.",
+      "ingilizce": "I go to the gym on weekdays."
+    },
+    {
+      "id": 9,
+      "türkçe": "Ben marketten taze sebze alırım.",
+      "devrik": "Ben alırım taze sebze marketten.",
+      "ingilizce": "I buy fresh vegetables from the market."
+    },
+    {
+      "id": 10,
+      "türkçe": "Ben her gün kilomu kontrol ederim.",
+      "devrik": "Ben kontrol ederim kilomu her gün.",
+      "ingilizce": "I check my weight every day."
+    },
+    {
+      "id": 11,
+      "türkçe": "Sen çok hızlı yürürsün.",
+      "devrik": "Sen yürürsün çok hızlı.",
+      "ingilizce": "You walk very fast."
+    },
+    {
+      "id": 12,
+      "türkçe": "Sen onu pazarda görürsün.",
+      "devrik": "Sen görürsün onu pazarda.",
+      "ingilizce": "You see him at the bazaar."
+    },
+    {
+      "id": 13,
+      "türkçe": "Sen otobüsle okula gidersin.",
+      "devrik": "Sen gidersin okula otobüsle.",
+      "ingilizce": "You go to school by bus."
+    },
+    {
+      "id": 14,
+      "türkçe": "Sen arkadaşlarına mesaj atarsın.",
+      "devrik": "Sen atarsın mesaj arkadaşlarına.",
+      "ingilizce": "You send messages to your friends."
+    },
+    {
+      "id": 15,
+      "türkçe": "Sen hafta sonları dışarıda yemek yersin.",
+      "devrik": "Sen yersin yemek dışarıda hafta sonları.",
+      "ingilizce": "You eat out on weekends."
+    },
+    {
+      "id": 16,
+      "türkçe": "Sen müzik dinlerken ders çalışırsın.",
+      "devrik": "Sen çalışırsın ders müzik dinlerken.",
+      "ingilizce": "You study while listening to music."
+    },
+    {
+      "id": 17,
+      "türkçe": "Sen telefonunu yanında taşırsın.",
+      "devrik": "Sen taşırsın telefonunu yanında.",
+      "ingilizce": "You carry your phone with you."
+    },
+    {
+      "id": 18,
+      "türkçe": "Sen sabahları duş alırsın.",
+      "devrik": "Sen alırsın duş sabahları.",
+      "ingilizce": "You take a shower in the mornings."
+    },
+    {
+      "id": 19,
+      "türkçe": "Sen bana yardım edersin.",
+      "devrik": "Sen yardım edersin bana.",
+      "ingilizce": "You always help me."
+    },
+    {
+      "id": 20,
+      "türkçe": "Sen yazları tatil köylerine gidersin.",
+      "devrik": "Sen gidersin tatil köylerine yazları.",
+      "ingilizce": "You go to resorts in the summer."
+    },
+    {
+      "id": 21,
+      "türkçe": "Siz düğüne gelirsiniz.",
+      "devrik": "Siz gelirsiniz düğüne.",
+      "ingilizce": "You come to the wedding."
+    },
+    {
+      "id": 22,
+      "türkçe": "Siz her gün yeni şeyler öğrenirsiniz.",
+      "devrik": "Siz öğrenirsiniz yeni şeyler her gün.",
+      "ingilizce": "You learn new things every day."
+    },
+    {
+      "id": 23,
+      "türkçe": "Siz acayip şeyler düşünürsünüz.",
+      "devrik": "Siz düşünürsünüz acayip şeyler.",
+      "ingilizce": "You think strange things."
+    },
+    {
+      "id": 24,
+      "türkçe": "Siz su kullanırsınız ama biz süt kullanırız.",
+      "devrik": "Siz kullanırsınız su ama biz kullanırız süt.",
+      "ingilizce": "You use water, but we use milk."
+    },
+    {
+      "id": 25,
+      "türkçe": "Siz aynı kafeye gidersiniz.",
+      "devrik": "Siz gidersiniz aynı kafeye.",
+      "ingilizce": "You go to the same café."
+    },
+    {
+      "id": 26,
+      "türkçe": "Siz gerçeği bulursunuz.",
+      "devrik": "Siz bulursunuz gerçeği.",
+      "ingilizce": "You find the truth."
+    },
+    {
+      "id": 27,
+      "türkçe": "Siz çocuklarınıza kitap okursunuz.",
+      "devrik": "Siz okursunuz kitap çocuklarınıza.",
+      "ingilizce": "You read books to your children."
+    },
+    {
+      "id": 28,
+      "türkçe": "Siz iş yerinde toplantı yaparsınız.",
+      "devrik": "Siz yaparsınız toplantı iş yerinde.",
+      "ingilizce": "You have meetings at work."
+    },
+    {
+      "id": 29,
+      "türkçe": "Siz geç saatlere kadar çalışırsınız.",
+      "devrik": "Siz çalışırsınız geç saatlere kadar.",
+      "ingilizce": "You work until late hours."
+    },
+    {
+      "id": 30,
+      "türkçe": "Siz arkadaşlarınızla seyahate çıkarsınız.",
+      "devrik": "Siz çıkarsınız seyahate arkadaşlarınızla.",
+      "ingilizce": "You go on a trip with your friends."
+    },
+    {
+      "id": 31,
+      "türkçe": "Biz her pazartesi ailecek gıybet ederiz.",
+      "devrik": "Biz ederiz gıybet her pazartesi ailecek.",
+      "ingilizce": "We gossip as a family every Monday."
+    },
+    {
+      "id": 32,
+      "türkçe": "Biz helal yemek yeriz.",
+      "devrik": "Biz yeriz helal yemek.",
+      "ingilizce": "We eat halal food."
+    },
+    {
+      "id": 33,
+      "türkçe": "Biz yaz tatilinde tarlada çalışırız.",
+      "devrik": "Biz çalışırız tarlada yaz tatilinde.",
+      "ingilizce": "We work in the field during summer vacation."
+    },
+    {
+      "id": 34,
+      "türkçe": "Biz akşamları komşumuzun kavgasını izleriz.",
+      "devrik": "Biz izleriz komşumuzun kavgasını akşamları.",
+      "ingilizce": "We watch our neighbor's fight in the evenings."
+    },
+    {
+      "id": 35,
+      "türkçe": "Biz hafta sonları ev temizleriz.",
+      "devrik": "Biz temizleriz ev hafta sonları.",
+      "ingilizce": "We clean the house on weekends."
+    },
+    {
+      "id": 36,
+      "türkçe": "Biz çok entelektüel görünürüz.",
+      "devrik": "Biz görünürüz çok entelektüel.",
+      "ingilizce": "We look very intellectual."
+    },
+    {
+      "id": 37,
+      "türkçe": "Biz bu gidişle belamızı buluruz.",
+      "devrik": "Biz buluruz belamızı bu gidişle.",
+      "ingilizce": "We get what we deserve at this rate."
+    },
+    {
+      "id": 38,
+      "türkçe": "Biz her yıl 20 farklı millet tanırız.",
+      "devrik": "Biz tanırız 20 farklı millet her yıl.",
+      "ingilizce": "We get to know 20 different nations every year."
+    },
+    {
+      "id": 39,
+      "türkçe": "Biz kendimizi zengin hissederiz.",
+      "devrik": "Biz hissederiz kendimizi zengin.",
+      "ingilizce": "We feel rich."
+    },
+    {
+      "id": 40,
+      "türkçe": "Biz imkansızı deneriz.",
+      "devrik": "Biz deneriz imkansızı.",
+      "ingilizce": "We try the impossible."
+    },
+    {
+      "id": 41,
+      "türkçe": "Onlar medyayı kullanırlar.",
+      "devrik": "Onlar kullanırlar medyayı.",
+      "ingilizce": "They use the media."
+    },
+    {
+      "id": 42,
+      "türkçe": "Onlar sabahları gazete okurlar.",
+      "devrik": "Onlar okurlar gazete sabahları.",
+      "ingilizce": "They read the newspaper in the mornings."
+    },
+    {
+      "id": 43,
+      "türkçe": "Onlar çocuklarını okula götürürler.",
+      "devrik": "Onlar götürürler çocuklarını okula.",
+      "ingilizce": "They take their children to school."
+    },
+    {
+      "id": 44,
+      "türkçe": "Onlar her hafta pazara giderler.",
+      "devrik": "Onlar giderler pazara her hafta.",
+      "ingilizce": "They go to the market every week."
+    },
+    {
+      "id": 45,
+      "türkçe": "Onlar hafta sonları piknik yaparlar.",
+      "devrik": "Onlar yaparlar piknik hafta sonları.",
+      "ingilizce": "They have a picnic on weekends."
+    },
+    {
+      "id": 46,
+      "türkçe": "Onlar en lüks hayatı yaşarlar.",
+      "devrik": "Onlar yaşarlar en lüks hayatı.",
+      "ingilizce": "They live the most luxurious life."
+    },
+    {
+      "id": 47,
+      "türkçe": "Onlar evcil hayvanlarını gezdirirler.",
+      "devrik": "Onlar gezdirirler evcil hayvanlarını.",
+      "ingilizce": "They walk their pets."
+    },
+    {
+      "id": 48,
+      "türkçe": "Onlar akşamları aynı kanalı izlerler.",
+      "devrik": "Onlar izlerler aynı kanalı akşamları.",
+      "ingilizce": "They watch the same channel in the evenings."
+    },
+    {
+      "id": 49,
+      "türkçe": "Onlar tiyatroya giderler.",
+      "devrik": "Onlar giderler tiyatroya.",
+      "ingilizce": "They go to the theatre."
+    },
+    {
+      "id": 50,
+      "türkçe": "Onlar bayram günleri akrabalarını ziyaret ederler.",
+      "devrik": "Onlar ederler ziyaret akrabalarını bayram günleri.",
+      "ingilizce": "They visit their relatives on holidays."
+    },
+    {
+      "id": 51,
+      "türkçe": "Onlar dükkanı geç açarlar.",
+      "devrik": "Onlar açarlar dükkanı geç.",
+      "ingilizce": "They open the shop late."
+    },
+    {
+      "id": 52,
+      "türkçe": "Onlar vergi öderler.",
+      "devrik": "Onlar öderler vergi.",
+      "ingilizce": "They pay taxes."
+    },
+    {
+      "id": 53,
+      "türkçe": "Onlar her Pazar kahvehanede buluşurlar.",
+      "devrik": "Onlar buluşurlar kahvehanede her Pazar.",
+      "ingilizce": "They meet at the coffeehouse every Sunday."
+    },
+    {
+      "id": 54,
+      "türkçe": "Onlar bedel ödemeye devam ederler.",
+      "devrik": "Onlar ederler devam bedel ödemeye.",
+      "ingilizce": "They continue to pay the price."
+    },
+    {
+      "id": 55,
+      "türkçe": "Onlar yazılım öğrenirler.",
+      "devrik": "Onlar öğrenirler yazılım.",
+      "ingilizce": "They learn software."
+    },
+    {
+      "id": 56,
+      "türkçe": "Onlar kanunu değiştirirler.",
+      "devrik": "Onlar değiştirirler kanunu.",
+      "ingilizce": "They change the law."
+    }
+  ]
+}

@@ -1,0 +1,901 @@
+{
+  "kelimeler": [
+    {
+      "id": 1,
+      "türkçe": "sevmek",
+      "ingilizce": "love"
+    },
+    {
+      "id": 2,
+      "türkçe": "öğrenmek",
+      "ingilizce": "learn"
+    },
+    {
+      "id": 3,
+      "türkçe": "yabancı dil",
+      "ingilizce": "foreign language"
+    },
+    {
+      "id": 4,
+      "türkçe": "yazmak",
+      "ingilizce": "write"
+    },
+    {
+      "id": 5,
+      "türkçe": "şiir",
+      "ingilizce": "poetry"
+    },
+    {
+      "id": 6,
+      "türkçe": "keyif almak",
+      "ingilizce": "enjoy"
+    },
+    {
+      "id": 7,
+      "türkçe": "eski",
+      "ingilizce": "old"
+    },
+    {
+      "id": 8,
+      "türkçe": "fotoğraf",
+      "ingilizce": "photo / photograph"
+    },
+    {
+      "id": 9,
+      "türkçe": "bakmak",
+      "ingilizce": "look at"
+    },
+    {
+      "id": 10,
+      "türkçe": "nefret etmek",
+      "ingilizce": "hate"
+    },
+    {
+      "id": 11,
+      "türkçe": "bilim kurgu",
+      "ingilizce": "science fiction"
+    },
+    {
+      "id": 12,
+      "türkçe": "hikaye",
+      "ingilizce": "story"
+    },
+    {
+      "id": 13,
+      "türkçe": "tercih etmek",
+      "ingilizce": "prefer"
+    },
+    {
+      "id": 14,
+      "türkçe": "izlemek",
+      "ingilizce": "watch"
+    },
+    {
+      "id": 15,
+      "türkçe": "tarih",
+      "ingilizce": "history"
+    },
+    {
+      "id": 16,
+      "türkçe": "belgesel",
+      "ingilizce": "documentary"
+    },
+    {
+      "id": 17,
+      "türkçe": "yalnız kalmak",
+      "ingilizce": "to be alone"
+    },
+    {
+      "id": 18,
+      "türkçe": "doğa",
+      "ingilizce": "nature"
+    },
+    {
+      "id": 19,
+      "türkçe": "dinlemek",
+      "ingilizce": "listen"
+    },
+    {
+      "id": 20,
+      "türkçe": "insan",
+      "ingilizce": "person / human / people"
+    },
+    {
+      "id": 21,
+      "türkçe": "dikkatle",
+      "ingilizce": "carefully"
+    },
+    {
+      "id": 22,
+      "türkçe": "üretmek",
+      "ingilizce": "produce / generate"
+    },
+    {
+      "id": 23,
+      "türkçe": "yeni",
+      "ingilizce": "new"
+    },
+    {
+      "id": 24,
+      "türkçe": "fikir",
+      "ingilizce": "idea"
+    },
+    {
+      "id": 25,
+      "türkçe": "aile",
+      "ingilizce": "family"
+    },
+    {
+      "id": 26,
+      "türkçe": "çözmek",
+      "ingilizce": "to solve"
+    },
+    {
+      "id": 27,
+      "türkçe": "sorun",
+      "ingilizce": "problem"
+    },
+    {
+      "id": 28,
+      "türkçe": "hareket etmek",
+      "ingilizce": "act / behave / move"
+    },
+    {
+      "id": 29,
+      "türkçe": "çoğu zaman",
+      "ingilizce": "usually / most of the time"
+    },
+    {
+      "id": 30,
+      "türkçe": "mantık",
+      "ingilizce": "logic"
+    },
+    {
+      "id": 31,
+      "türkçe": "bulmak",
+      "ingilizce": "find"
+    },
+    {
+      "id": 32,
+      "türkçe": "ilginç",
+      "ingilizce": "interesting"
+    },
+    {
+      "id": 33,
+      "türkçe": "sanat",
+      "ingilizce": "art"
+    },
+    {
+      "id": 34,
+      "türkçe": "galeri",
+      "ingilizce": "gallery"
+    },
+    {
+      "id": 35,
+      "türkçe": "gezmek",
+      "ingilizce": "visit / wander / tour"
+    },
+    {
+      "id": 36,
+      "türkçe": "inanmak",
+      "ingilizce": "believe"
+    },
+    {
+      "id": 37,
+      "türkçe": "müzik",
+      "ingilizce": "music"
+    },
+    {
+      "id": 38,
+      "türkçe": "değişmek",
+      "ingilizce": "change"
+    },
+    {
+      "id": 39,
+      "türkçe": "ruh hali",
+      "ingilizce": "mood"
+    },
+    {
+      "id": 40,
+      "türkçe": "güzel",
+      "ingilizce": "beautiful / nice"
+    },
+    {
+      "id": 41,
+      "türkçe": "söz",
+      "ingilizce": "word / saying / lyrics"
+    },
+    {
+      "id": 42,
+      "türkçe": "defter",
+      "ingilizce": "notebook"
+    },
+    {
+      "id": 43,
+      "türkçe": "göz",
+      "ingilizce": "eye"
+    },
+    {
+      "id": 44,
+      "türkçe": "davranış",
+      "ingilizce": "behavior"
+    },
+    {
+      "id": 45,
+      "türkçe": "motive olmak",
+      "ingilizce": "get motivated"
+    },
+    {
+      "id": 46,
+      "türkçe": "hayal kurmak",
+      "ingilizce": "dream / imagine"
+    },
+    {
+      "id": 47,
+      "türkçe": "kelime",
+      "ingilizce": "word"
+    },
+    {
+      "id": 48,
+      "türkçe": "güç",
+      "ingilizce": "power / strength"
+    },
+    {
+      "id": 49,
+      "türkçe": "resim çizmek",
+      "ingilizce": "draw (a picture)"
+    },
+    {
+      "id": 50,
+      "türkçe": "boş zaman",
+      "ingilizce": "free time / spare time"
+    },
+    {
+      "id": 51,
+      "türkçe": "okumak",
+      "ingilizce": "read"
+    },
+    {
+      "id": 52,
+      "türkçe": "arka kapaklar",
+      "ingilizce": "back covers"
+    },
+    {
+      "id": 53,
+      "türkçe": "kitap",
+      "ingilizce": "book"
+    },
+    {
+      "id": 54,
+      "türkçe": "dalmak",
+      "ingilizce": "dive into / get absorbed in"
+    },
+    {
+      "id": 55,
+      "türkçe": "derinlemesine",
+      "ingilizce": "deeply / in depth"
+    },
+    {
+      "id": 56,
+      "türkçe": "bazı",
+      "ingilizce": "some / certain"
+    },
+    {
+      "id": 57,
+      "türkçe": "konular",
+      "ingilizce": "topics / subjects"
+    },
+    {
+      "id": 58,
+      "türkçe": "karmaşık",
+      "ingilizce": "complex / complicated"
+    },
+    {
+      "id": 59,
+      "türkçe": "yapboz",
+      "ingilizce": "puzzle"
+    },
+    {
+      "id": 60,
+      "türkçe": "saygı duymak",
+      "ingilizce": "respect"
+    },
+    {
+      "id": 61,
+      "türkçe": "farklı",
+      "ingilizce": "different"
+    },
+    {
+      "id": 62,
+      "türkçe": "bakış açısı",
+      "ingilizce": "point of view / perspective"
+    },
+    {
+      "id": 63,
+      "türkçe": "yardımcı olmak",
+      "ingilizce": "help"
+    },
+    {
+      "id": 64,
+      "türkçe": "kızmak",
+      "ingilizce": "get angry"
+    },
+    {
+      "id": 65,
+      "türkçe": "kirletmek",
+      "ingilizce": "pollute"
+    },
+    {
+      "id": 66,
+      "türkçe": "başlamak",
+      "ingilizce": "start / begin"
+    },
+    {
+      "id": 67,
+      "türkçe": "iş",
+      "ingilizce": "work / job"
+    },
+    {
+      "id": 68,
+      "türkçe": "plan yapmadan",
+      "ingilizce": "without planning"
+    },
+    {
+      "id": 69,
+      "türkçe": "keşfetmek",
+      "ingilizce": "discover / explore"
+    },
+    {
+      "id": 70,
+      "türkçe": "takip etmek",
+      "ingilizce": "follow"
+    },
+    {
+      "id": 71,
+      "türkçe": "teknoloji",
+      "ingilizce": "technology"
+    },
+    {
+      "id": 72,
+      "türkçe": "yakından",
+      "ingilizce": "closely"
+    },
+    {
+      "id": 73,
+      "türkçe": "uzak durmak",
+      "ingilizce": "stay away"
+    },
+    {
+      "id": 74,
+      "türkçe": "kalabalık",
+      "ingilizce": "crowd"
+    },
+    {
+      "id": 75,
+      "türkçe": "kısa",
+      "ingilizce": "short"
+    },
+    {
+      "id": 76,
+      "türkçe": "öykü",
+      "ingilizce": "story"
+    },
+    {
+      "id": 77,
+      "türkçe": "zaman zaman",
+      "ingilizce": "occasionally / from time to time"
+    },
+    {
+      "id": 78,
+      "türkçe": "mektup",
+      "ingilizce": "letter"
+    },
+    {
+      "id": 79,
+      "türkçe": "motive etmek",
+      "ingilizce": "motivate"
+    },
+    {
+      "id": 80,
+      "türkçe": "arkadaş",
+      "ingilizce": "friend"
+    },
+    {
+      "id": 81,
+      "türkçe": "davranmak",
+      "ingilizce": "act / behave"
+    },
+    {
+      "id": 82,
+      "türkçe": "genellikle",
+      "ingilizce": "generally / usually"
+    },
+    {
+      "id": 83,
+      "türkçe": "sabırlı",
+      "ingilizce": "patient"
+    },
+    {
+      "id": 84,
+      "türkçe": "düşünmek",
+      "ingilizce": "think"
+    },
+    {
+      "id": 85,
+      "türkçe": "daha iyi",
+      "ingilizce": "better"
+    },
+    {
+      "id": 86,
+      "türkçe": "sessiz ortam",
+      "ingilizce": "quiet environment"
+    },
+    {
+      "id": 87,
+      "türkçe": "yıldız",
+      "ingilizce": "star"
+    },
+    {
+      "id": 88,
+      "türkçe": "denemek",
+      "ingilizce": "try"
+    },
+    {
+      "id": 89,
+      "türkçe": "yaratmak",
+      "ingilizce": "create"
+    },
+    {
+      "id": 90,
+      "türkçe": "kendi",
+      "ingilizce": "own"
+    },
+    {
+      "id": 91,
+      "türkçe": "proje",
+      "ingilizce": "project"
+    },
+    {
+      "id": 92,
+      "türkçe": "tutunmak",
+      "ingilizce": "hold on"
+    },
+    {
+      "id": 93,
+      "türkçe": "sıkı sıkıya",
+      "ingilizce": "tightly"
+    },
+    {
+      "id": 94,
+      "türkçe": "hayal",
+      "ingilizce": "dream / imagination"
+    },
+    {
+      "id": 95,
+      "türkçe": "kişisel gelişim",
+      "ingilizce": "personal development"
+    },
+    {
+      "id": 96,
+      "türkçe": "vakit geçirmek",
+      "ingilizce": "spend time"
+    },
+    {
+      "id": 97,
+      "türkçe": "çocuklar",
+      "ingilizce": "children"
+    },
+    {
+      "id": 98,
+      "türkçe": "karar vermek",
+      "ingilizce": "decide"
+    },
+    {
+      "id": 99,
+      "türkçe": "bir şeyler",
+      "ingilizce": "something / things"
+    },
+    {
+      "id": 100,
+      "türkçe": "sabahları",
+      "ingilizce": "in the mornings"
+    },
+    {
+      "id": 101,
+      "türkçe": "yapmak",
+      "ingilizce": "do / make"
+    },
+    {
+      "id": 102,
+      "türkçe": "konuşmak",
+      "ingilizce": "speak / talk"
+    },
+    {
+      "id": 103,
+      "türkçe": "uzun uzun",
+      "ingilizce": "deeply / at length"
+    },
+    {
+      "id": 104,
+      "türkçe": "geceler",
+      "ingilizce": "nights"
+    },
+    {
+      "id": 105,
+      "türkçe": "yaşamak",
+      "ingilizce": "live"
+    },
+    {
+      "id": 106,
+      "türkçe": "bağımlı olmadan",
+      "ingilizce": "without depending"
+    },
+    {
+      "id": 107,
+      "türkçe": "paylaşmak",
+      "ingilizce": "share"
+    },
+    {
+      "id": 108,
+      "türkçe": "açıkça",
+      "ingilizce": "openly / clearly"
+    },
+    {
+      "id": 109,
+      "türkçe": "klasik müzik",
+      "ingilizce": "classical music"
+    },
+    {
+      "id": 110,
+      "türkçe": "kullanmak",
+      "ingilizce": "use"
+    },
+    {
+      "id": 111,
+      "türkçe": "zaman",
+      "ingilizce": "time"
+    },
+    {
+      "id": 112,
+      "türkçe": "verimli",
+      "ingilizce": "efficiently / productive"
+    },
+    {
+      "id": 113,
+      "türkçe": "önemsemek",
+      "ingilizce": "care about"
+    },
+    {
+      "id": 114,
+      "türkçe": "ilham vermek",
+      "ingilizce": "inspire"
+    },
+    {
+      "id": 115,
+      "türkçe": "sabit fikirli",
+      "ingilizce": "narrow-minded"
+    },
+    {
+      "id": 116,
+      "türkçe": "bilmek",
+      "ingilizce": "know"
+    },
+    {
+      "id": 117,
+      "türkçe": "küçük şeyler",
+      "ingilizce": "little things"
+    },
+    {
+      "id": 118,
+      "türkçe": "değer",
+      "ingilizce": "value"
+    },
+    {
+      "id": 119,
+      "türkçe": "hayat",
+      "ingilizce": "life"
+    }
+  ],
+  "cümleler": [
+    {
+      "id": 1,
+      "türkçe": "Ben hayvanları çok severim.",
+      "devrik": "Ben severim hayvanları çok.",
+      "ingilizce": "I love animals very much."
+    },
+    {
+      "id": 2,
+      "türkçe": "Ben yabancı dilleri öğrenirim.",
+      "devrik": "Ben öğrenirim yabancı dilleri.",
+      "ingilizce": "I learn foreign languages."
+    },
+    {
+      "id": 3,
+      "türkçe": "Ben şiir yazarım.",
+      "devrik": "Ben yazarım şiir.",
+      "ingilizce": "I write poetry."
+    },
+    {
+      "id": 4,
+      "türkçe": "Ben eski fotoğraflara bakmaktan keyif alırım.",
+      "devrik": "Ben alırım keyif eski fotoğraflara bakmaktan.",
+      "ingilizce": "I enjoy looking at old photographs."
+    },
+    {
+      "id": 5,
+      "türkçe": "Ben karmaşık konuları araştırmayı severim.",
+      "devrik": "Ben severim araştırmak karmaşık konuları.",
+      "ingilizce": "I like to research complex topics."
+    },
+    {
+      "id": 6,
+      "türkçe": "Ben bilim kurgu hikayelerinden nefret ederim.",
+      "devrik": "Ben nefret ederim bilim kurgu hikayelerinden.",
+      "ingilizce": "I hate science fiction stories."
+    },
+    {
+      "id": 7,
+      "türkçe": "Ben tarihi belgeseller izlemeyi tercih ederim.",
+      "devrik": "Ben tercih ederim izlemek tarihi belgeseller.",
+      "ingilizce": "I prefer to watch historical documentaries."
+    },
+    {
+      "id": 8,
+      "türkçe": "Ben doğada yalnız kalmayı severim.",
+      "devrik": "Ben severim yalnız kalmak doğada.",
+      "ingilizce": "I enjoy being alone in nature."
+    },
+    {
+      "id": 9,
+      "türkçe": "Ben insanları dikkatle dinlerim.",
+      "devrik": "Ben dinlerim insanları dikkatle.",
+      "ingilizce": "I listen to people carefully."
+    },
+    {
+      "id": 10,
+      "türkçe": "Ben yeni fikirler üretmeyi severim.",
+      "devrik": "Ben severim üretmeyi yeni fikirler.",
+      "ingilizce": "I love generating new ideas."
+    },
+    {
+      "id": 11,
+      "türkçe": "Ben sorunları çözmekte başarılıyımdır.",
+      "devrik": "Ben başarılıyım çözmekte sorunları.",
+      "ingilizce": "I am good at solving problems."
+    },
+    {
+      "id": 12,
+      "türkçe": "Ben çoğu zaman mantıkla hareket ederim.",
+      "devrik": "Ben hareket ederim mantıkla çoğu zaman.",
+      "ingilizce": "I usually act with logic."
+    },
+    {
+      "id": 13,
+      "türkçe": "Ben sanat galerilerini gezmeyi ilginç bulurum.",
+      "devrik": "Ben bulurum ilginç gezmeyi sanat galerilerini.",
+      "ingilizce": "I find it interesting to visit art galleries."
+    },
+    {
+      "id": 14,
+      "türkçe": "Ben müziğin ruh halimi değiştirdiğine inanırım.",
+      "devrik": "Ben inanırım müziğin değiştirdiğine ruh halimi.",
+      "ingilizce": "I believe music changes my mood."
+    },
+    {
+      "id": 15,
+      "türkçe": "Ben güzel sözleri defterime yazarım.",
+      "devrik": "Ben yazarım güzel sözleri defterime.",
+      "ingilizce": "I write beautiful words in my notebook."
+    },
+    {
+      "id": 16,
+      "türkçe": "Ben insanların davranışlarını gözlemlerim.",
+      "devrik": "Ben gözlemlerim insanların davranışlarını.",
+      "ingilizce": "I observe people's behavior."
+    },
+    {
+      "id": 17,
+      "türkçe": "Ben hayal kurarak motive olurum.",
+      "devrik": "Ben motive olurum hayal kurarak.",
+      "ingilizce": "I get motivated by dreaming."
+    },
+    {
+      "id": 18,
+      "türkçe": "Ben kelimelerin gücüne inanırım.",
+      "devrik": "Ben inanırım kelimelerin gücüne.",
+      "ingilizce": "I believe in the power of words."
+    },
+    {
+      "id": 19,
+      "türkçe": "Ben boş zamanlarımda resim çizerim.",
+      "devrik": "Ben çizerim resim boş zamanlarımda.",
+      "ingilizce": "I draw pictures in my free time."
+    },
+    {
+      "id": 20,
+      "türkçe": "Ben kitapların arka kapaklarını okurum.",
+      "devrik": "Ben okurum arka kapaklarını kitapların.",
+      "ingilizce": "I read the back covers of books."
+    },
+    {
+      "id": 21,
+      "türkçe": "Ben bazı konulara derinlemesine dalarım.",
+      "devrik": "Ben dalarım bazı konulara derinlemesine.",
+      "ingilizce": "I dive deep into certain topics."
+    },
+    {
+      "id": 22,
+      "türkçe": "Ben karmaşık yapbozları çözmeyi severim.",
+      "devrik": "Ben severim çözmeyi karmaşık yapbozları.",
+      "ingilizce": "I like solving complex puzzles."
+    },
+    {
+      "id": 23,
+      "türkçe": "Ben farklı bakış açılarına saygı duyarım.",
+      "devrik": "Ben saygı duyarım farklı bakış açılarına.",
+      "ingilizce": "I respect different perspectives."
+    },
+    {
+      "id": 24,
+      "türkçe": "Ben insanlara yardımcı olmayı severim.",
+      "devrik": "Ben severim yardımcı olmayı insanlara.",
+      "ingilizce": "I enjoy helping people."
+    },
+    {
+      "id": 25,
+      "türkçe": "Ben doğayı kirleten insanlara kızarım.",
+      "devrik": "Ben kızarım doğayı kirleten insanlara.",
+      "ingilizce": "I get angry at people who pollute nature."
+    },
+    {
+      "id": 26,
+      "türkçe": "Ben plan yapmadan işe başlamam.",
+      "devrik": "Ben başlamam işe plan yapmadan.",
+      "ingilizce": "I don't start work without planning."
+    },
+    {
+      "id": 27,
+      "türkçe": "Ben ilginç belgeseller keşfederim.",
+      "devrik": "Ben keşfederim ilginç belgeseller.",
+      "ingilizce": "I discover interesting documentaries."
+    },
+    {
+      "id": 28,
+      "türkçe": "Ben yeni teknolojileri yakından takip ederim.",
+      "devrik": "Ben takip ederim yeni teknolojileri yakından.",
+      "ingilizce": "I closely follow new technologies."
+    },
+    {
+      "id": 29,
+      "türkçe": "Ben çoğu zaman kalabalıktan uzak dururum.",
+      "devrik": "Ben uzak dururum kalabalıktan çoğu zaman.",
+      "ingilizce": "I usually stay away from crowds."
+    },
+    {
+      "id": 30,
+      "türkçe": "Ben kısa öyküler yazarım.",
+      "devrik": "Ben yazarım kısa öyküler.",
+      "ingilizce": "I write short stories."
+    },
+    {
+      "id": 31,
+      "türkçe": "Ben zaman zaman eski mektupları okurum.",
+      "devrik": "Ben okurum eski mektupları zaman zaman.",
+      "ingilizce": "I occasionally read old letters."
+    },
+    {
+      "id": 32,
+      "türkçe": "Ben arkadaşlarımı motive ederim.",
+      "devrik": "Ben motive ederim arkadaşlarımı.",
+      "ingilizce": "I motivate my friends."
+    },
+    {
+      "id": 33,
+      "türkçe": "Ben genellikle sabırlı davranırım.",
+      "devrik": "Ben davranırım sabırlı genellikle.",
+      "ingilizce": "I usually behave patiently."
+    },
+    {
+      "id": 34,
+      "türkçe": "Ben sessiz ortamlarda daha iyi düşünürüm.",
+      "devrik": "Ben düşünürüm daha iyi sessiz ortamlarda.",
+      "ingilizce": "I think better in quiet environments."
+    },
+    {
+      "id": 35,
+      "türkçe": "Ben yıldızları izlemeyi severim.",
+      "devrik": "Ben severim izlemeyi yıldızları.",
+      "ingilizce": "I love watching the stars."
+    },
+    {
+      "id": 36,
+      "türkçe": "Ben kendi projelerimi yaratmayı denerim.",
+      "devrik": "Ben denerim yaratmayı kendi projelerimi.",
+      "ingilizce": "I try to create my own projects."
+    },
+    {
+      "id": 37,
+      "türkçe": "Ben hayallerime sıkı sıkıya tutunurum.",
+      "devrik": "Ben tutunurum hayallerime sıkı sıkıya.",
+      "ingilizce": "I hold on tightly to my dreams."
+    },
+    {
+      "id": 38,
+      "türkçe": "Ben kişisel gelişim kitaplarına ilgi duyarım.",
+      "devrik": "Ben ilgi duyarım kişisel gelişim kitaplarına.",
+      "ingilizce": "I am interested in self-development books."
+    },
+    {
+      "id": 39,
+      "türkçe": "Ben çocuklarla vakit geçirmekten hoşlanırım.",
+      "devrik": "Ben hoşlanırım vakit geçirmekten çocuklarla.",
+      "ingilizce": "I enjoy spending time with children."
+    },
+    {
+      "id": 40,
+      "türkçe": "Ben sabahları bir şeyler yapmaya karar veririm.",
+      "devrik": "Ben karar veririm bir şeyler yapmaya sabahları.",
+      "ingilizce": "I decide to do something in the mornings."
+    },
+    {
+      "id": 41,
+      "türkçe": "Ben konuşmayı severim.",
+      "devrik": "Ben severim konuşmayı.",
+      "ingilizce": "I enjoy talking."
+    },
+    {
+      "id": 42,
+      "türkçe": "Ben bazı geceler uzun uzun düşünürüm.",
+      "devrik": "Ben düşünürüm uzun uzun bazı geceler.",
+      "ingilizce": "I think deeply on some nights."
+    },
+    {
+      "id": 43,
+      "türkçe": "Ben kimseye bağımlı olmadan yaşarım.",
+      "devrik": "Ben yaşarım kimseye bağımlı olmadan.",
+      "ingilizce": "I live without depending on anyone."
+    },
+    {
+      "id": 44,
+      "türkçe": "Ben fikirlerimi açıkça paylaşırım.",
+      "devrik": "Ben paylaşırım fikirlerimi açıkça.",
+      "ingilizce": "I share my ideas openly."
+    },
+    {
+      "id": 45,
+      "türkçe": "Ben klasik müziği dinlemeyi severim.",
+      "devrik": "Ben severim dinlemeyi klasik müziği.",
+      "ingilizce": "I enjoy listening to classical music."
+    },
+    {
+      "id": 46,
+      "türkçe": "Ben zamanımı verimli kullanırım.",
+      "devrik": "Ben kullanırım zamanımı verimli.",
+      "ingilizce": "I use my time efficiently."
+    },
+    {
+      "id": 47,
+      "türkçe": "Ben insanlara ilham vermeyi önemserim.",
+      "devrik": "Ben önemserim ilham vermeyi insanlara.",
+      "ingilizce": "I care about inspiring people."
+    },
+    {
+      "id": 48,
+      "türkçe": "Ben sabit fikirli insanlardan uzak dururum.",
+      "devrik": "Ben uzak dururum sabit fikirli insanlardan.",
+      "ingilizce": "I stay away from narrow-minded people."
+    },
+    {
+      "id": 49,
+      "türkçe": "Ben hayatta küçük şeylerin değerini bilirim.",
+      "devrik": "Ben bilirim küçük şeylerin değerini hayatta.",
+      "ingilizce": "I know the value of little things in life."
+    },
+    {
+      "id": 50,
+      "türkçe": "Ben İngilizce bilirim.",
+      "devrik": "Ben bilirim İngilizce.",
+      "ingilizce": "I know English."
+    }
+  ]
+}
