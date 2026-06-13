@@ -7,6 +7,8 @@ final class TTSService: NSObject, AVSpeechSynthesizerDelegate {
     private let synthesizer = AVSpeechSynthesizer()
 
     private(set) var isPlaying = false
+    /// Şu an çalan metnin orijinali — SpeakButton hangi butonun aktif olduğunu bununla ayırt eder
+    private(set) var currentText: String? = nil
 
     // neden track: speak(withLocale:) bitince orijinal dile geri dönmek için
     private var currentLocale = "en-GB"
@@ -47,6 +49,7 @@ final class TTSService: NSObject, AVSpeechSynthesizerDelegate {
         stopIfPlaying()
         restoreLocale = currentLocale
         currentLocale = locale
+        currentText = text
         isPlaying = true
         synthesizer.speak(makeUtterance(text, rate: baseRate))
     }
@@ -54,6 +57,7 @@ final class TTSService: NSObject, AVSpeechSynthesizerDelegate {
     /// Cümle veya uzun metin okuma — normal hız
     func speak(_ text: String) {
         stopIfPlaying()
+        currentText = text
         isPlaying = true
         synthesizer.speak(makeUtterance(text, rate: baseRate))
     }
@@ -62,6 +66,7 @@ final class TTSService: NSObject, AVSpeechSynthesizerDelegate {
     /// locale: nil ise currentLocale kullanılır; EN→TR yönünde "tr-TR" geçilmeli
     func speakWord(_ word: String, locale: String? = nil) {
         stopIfPlaying()
+        currentText = word
         isPlaying = true
         // neden baseRate - 0.07: tek kelime bağlamsız okunuyor, biraz yavaş daha net
         let wordRate = min(max(baseRate - 0.07, 0.1), 1.0)
@@ -70,6 +75,7 @@ final class TTSService: NSObject, AVSpeechSynthesizerDelegate {
 
     func stop() {
         isPlaying = false
+        currentText = nil
         synthesizer.stopSpeaking(at: .immediate)
     }
 
@@ -125,6 +131,7 @@ final class TTSService: NSObject, AVSpeechSynthesizerDelegate {
 
     private func finishPlayback() {
         isPlaying = false
+        currentText = nil
         // neden restore: speak(withLocale:) sonrasında orijinal dile dönülür
         if let restore = restoreLocale {
             restoreLocale = nil

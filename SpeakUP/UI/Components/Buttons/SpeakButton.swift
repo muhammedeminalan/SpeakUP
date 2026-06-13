@@ -16,24 +16,26 @@ struct SpeakButton: View {
     var body: some View {
         let isMuted = settings.isMuted
         let iconColor = color ?? AppTheme.primaryBlue
+        // neden currentText karşılaştırması: isPlaying global — başka buton çalıyorsa
+        // bu buton stop ikonu göstermemeli, yalnızca kendi metni çalıyorsa göstermeli
+        let thisIsPlaying = tts.isPlaying && tts.currentText == text
 
         Button(action: toggle) {
-            Image(systemName: iconName(isMuted: isMuted))
+            Image(systemName: iconName(isMuted: isMuted, thisIsPlaying: thisIsPlaying))
                 .font(.system(size: size))
                 .foregroundStyle(isMuted ? iconColor.opacity(0.35) : iconColor)
                 .frame(minWidth: 36, minHeight: 36)
         }
-        // neden disabled: mute ise butona basılınca hiçbir şey olmasın
         .disabled(isMuted)
     }
 
-    private func iconName(isMuted: Bool) -> String {
+    private func iconName(isMuted: Bool, thisIsPlaying: Bool) -> String {
         if isMuted { return "speaker.slash.fill" }
-        return tts.isPlaying ? "stop.fill" : "speaker.wave.2.fill"
+        return thisIsPlaying ? "stop.fill" : "speaker.wave.2.fill"
     }
 
     private func toggle() {
-        if tts.isPlaying {
+        if tts.isPlaying && tts.currentText == text {
             tts.stop()
         } else if let locale {
             tts.speak(text, withLocale: locale)
