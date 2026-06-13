@@ -13,6 +13,8 @@ struct WordQuizView: View {
 
     // ── Swipe durumu ───────────────────────────────────────────────────────
     @State private var dragOffset: CGFloat = 0
+    /// -1 = sola (ileri), +1 = sağa (geri) — transition yönünü belirler
+    @State private var swipeDir: Int = 0
     @State private var showExitConfirm = false
     @State private var showOptions = false
 
@@ -70,28 +72,41 @@ struct WordQuizView: View {
     @ViewBuilder
     private var content: some View {
         if let viewModel, let question = viewModel.question {
-            // neden geometri tabanlı swipe: Flutter'daki kart kaydırma hissi korunur
             let displayed = history.historyItem ?? question
 
-            WordQuizQuestionView(
-                state: displayed,
-                isReadOnly: history.isInHistory,
-                onSelect: { viewModel.selectAnswer($0) },
-                onNext: { goForward() }
-            )
-            .id("\(history.isInHistory ? history.historyItem?.questionIndex ?? -1 : question.questionIndex)_\(history.isInHistory)")
+            // ZStack dragOffset'i taşır; içindeki kart transition ile girer/çıkar.
+            // neden ZStack: offset + kart transition birbirini ezmeden çalışır
+            ZStack {
+                WordQuizQuestionView(
+                    state: displayed,
+                    isReadOnly: history.isInHistory,
+                    onSelect: { viewModel.selectAnswer($0) },
+                    onNext: { commitSwipe(direction: -1) }
+                )
+                .id(cardId)
+                .transition(.asymmetric(
+                    insertion: .move(edge: swipeDir < 0 ? .trailing : .leading)
+                        .combined(with: .opacity),
+                    removal: .move(edge: swipeDir < 0 ? .leading : .trailing)
+                        .combined(with: .opacity)
+                ))
+            }
             .offset(x: dragOffset)
             .rotationEffect(
                 .radians(Double(min(max(dragOffset / max(UIScreen.main.bounds.width, 1), -1), 1)) * 0.05),
                 anchor: .bottom
             )
-            .animation(.easeOut(duration: 0.18), value: history.isInHistory)
             .gesture(swipeGesture)
         } else {
-            // Başlatma anı — Flutter'daki Initial state'in karşılığı
             ProgressView()
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
+    }
+
+    private var cardId: String {
+        guard let viewModel, let question = viewModel.question else { return "empty" }
+        let displayed = history.historyItem ?? question
+        return "\(displayed.questionIndex)_\(history.isInHistory)"
     }
 
     // ── Kurulum ────────────────────────────────────────────────────────────
@@ -152,25 +167,31 @@ struct WordQuizView: View {
 
     private var swipeGesture: some Gesture {
         DragGesture()
-            .onChanged { value in
-                dragOffset = value.translation.width
-            }
+            .onChanged { dragOffset = $0.translation.width }
             .onEnded { value in
-                let screenWidth = UIScreen.main.bounds.width
-                let farEnough = abs(dragOffset) > screenWidth * 0.33
-                let fastEnough = abs(value.predictedEndTranslation.width - value.translation.width) > 200
+                let w = UIScreen.main.bounds.width
+                let farEnough = abs(dragOffset) > w * 0.30
+                // iOS 17+ velocity API — hız bazlı hızlı fırlatma tespiti
+                let fastEnough = abs(value.velocity.width) > 500
 
                 if dragOffset < 0, farEnough || fastEnough, canGoForward {
-                    dragOffset = 0
-                    goForward()
+                    commitSwipe(direction: -1)
                 } else if dragOffset > 0, farEnough || fastEnough, history.canGoBack {
-                    dragOffset = 0
-                    history.goBack()
+                    commitSwipe(direction: 1)
                 } else {
-                    // Eşik aşılmadı — kart yerine geri yaylanır
-                    withAnimation(.spring(duration: 0.42)) { dragOffset = 0 }
+                    withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) { dragOffset = 0 }
                 }
             }
+    }
+
+    /// Swipe geçişini uygular — yön belirlenip offset sıfırlanır, ardından
+    /// withAnimation içinde state değişir ve transition tetiklenir.
+    private func commitSwipe(direction: Int) {
+        swipeDir = direction
+        dragOffset = 0
+        withAnimation(.spring(response: 0.32, dampingFraction: 0.82)) {
+            if direction < 0 { goForward() } else { history.goBack() }
+        }
     }
 
     private var canGoForward: Bool {
