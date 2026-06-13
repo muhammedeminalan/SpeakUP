@@ -66,7 +66,9 @@ struct SentenceBuilderQuestionView: View {
                         isCorrect: state.isCorrect,
                         onWordTapped: { word in
                             // neden her zaman TTS: cevap sonrasında da kelime dinlenebilir
-                            if !settings.isMuted { tts.speakWord(word) }
+                            if !settings.isMuted {
+                                tts.speakWord(word, locale: state.direction == .enToTr ? "tr-TR" : nil)
+                            }
                             // neden koşullu: sadece kontrol edilmemişse kelimeyi geri al
                             if !state.isChecked, !isReadOnly { onRemove(word) }
                         }
@@ -80,7 +82,9 @@ struct SentenceBuilderQuestionView: View {
                     WrapLayout(spacing: AppConstants.paddingS) {
                         ForEach(state.availableWords, id: \.self) { word in
                             WordChip(word: word, isEnabled: !state.isChecked) {
-                                if !settings.isMuted { tts.speakWord(word) }
+                                if !settings.isMuted {
+                                    tts.speakWord(word, locale: state.direction == .enToTr ? "tr-TR" : nil)
+                                }
                                 if !state.isChecked, !isReadOnly { onDrop(word) }
                             }
                         }

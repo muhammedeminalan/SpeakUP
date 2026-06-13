@@ -58,15 +58,14 @@ final class TTSService: NSObject, AVSpeechSynthesizerDelegate {
         synthesizer.speak(makeUtterance(text, rate: baseRate))
     }
 
-    /// Tek kelime okuma — daha yavaş hız, daha net telaffuz
-    /// neden ayrı metot: tek kelimeler cümle bağlamı olmadan okunduğu için
-    /// biraz yavaşlatmak anlaşılırlığı artırır
-    func speakWord(_ word: String) {
+    /// Tek kelime okuma — daha yavaş hız, daha net telaffuz.
+    /// locale: nil ise currentLocale kullanılır; EN→TR yönünde "tr-TR" geçilmeli
+    func speakWord(_ word: String, locale: String? = nil) {
         stopIfPlaying()
         isPlaying = true
         // neden baseRate - 0.07: tek kelime bağlamsız okunuyor, biraz yavaş daha net
         let wordRate = min(max(baseRate - 0.07, 0.1), 1.0)
-        synthesizer.speak(makeUtterance(normalizeWord(word), rate: wordRate))
+        synthesizer.speak(makeUtterance(normalizeWord(word), rate: wordRate, locale: locale))
     }
 
     func stop() {
@@ -80,9 +79,9 @@ final class TTSService: NSObject, AVSpeechSynthesizerDelegate {
         if isPlaying { stop() }
     }
 
-    private func makeUtterance(_ text: String, rate: Double) -> AVSpeechUtterance {
+    private func makeUtterance(_ text: String, rate: Double, locale: String? = nil) -> AVSpeechUtterance {
         let utterance = AVSpeechUtterance(string: text)
-        utterance.voice = voiceForLocale(currentLocale)
+        utterance.voice = voiceForLocale(locale ?? currentLocale)
         // AVSpeech hız ölçeği 0–1, flutter_tts ile aynı aralık — doğrudan eşleme
         utterance.rate = Float(rate)
         utterance.volume = 1.0

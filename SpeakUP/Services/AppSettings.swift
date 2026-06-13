@@ -112,9 +112,7 @@ final class AppSettings {
 
         // Kaydedilmiş tercihleri TTS servisine uygula
         tts.baseRate = speechRate
-        tts.setLocale(
-            accent.isEnglish ? accent.locale : TTSAccent.british.locale
-        )
+        tts.setLocale(accent.locale)
     }
 
     // ── Tema ───────────────────────────────────────────────────────────────
@@ -166,13 +164,13 @@ final class AppSettings {
     var accent: TTSAccent {
         didSet {
             defaults.set(accent.rawValue, forKey: Keys.accent)
-            // neden: Türkçe seçilince İngilizce TTS locale bozulmamalı —
-            // Türkçe metin zaten speak(withLocale: "tr-TR") ile okunur
             if accent.isEnglish {
                 // son İngilizce aksanı kaydet — yön değişince geri dönebilsin
                 defaults.set(accent.rawValue, forKey: Keys.lastEnglishAccent)
-                tts.setLocale(accent.locale)
             }
+            // neden her zaman: Turkish seçilince de locale güncellenmeli,
+            // speakWord gibi locale almayan çağrılar yanlış aksan kullanmasın
+            tts.setLocale(accent.locale)
         }
     }
 
