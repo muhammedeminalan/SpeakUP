@@ -15,9 +15,9 @@ enum AppThemeMode: String, CaseIterable {
 }
 
 enum TTSAccent: String, CaseIterable {
-    case british   // en-GB — varsayılan
+    case british  // en-GB — varsayılan
     case american  // en-US
-    case turkish   // tr-TR
+    case turkish  // tr-TR
 
     /// AVSpeechSynthesisVoice'a gönderilecek locale kodu
     var locale: String {
@@ -91,19 +91,30 @@ final class AppSettings {
         self.defaults = defaults
         self.tts = tts
 
-        themeMode = AppThemeMode(rawValue: defaults.string(forKey: Keys.themeMode) ?? "") ?? .system
+        themeMode =
+            AppThemeMode(
+                rawValue: defaults.string(forKey: Keys.themeMode) ?? ""
+            ) ?? .system
         let savedFont = defaults.integer(forKey: Keys.fontSize)
-        fontSize = (Self.minFontSize...Self.maxFontSize).contains(savedFont) ? savedFont : Self.defaultFontSize
+        fontSize =
+            (Self.minFontSize...Self.maxFontSize).contains(savedFont)
+            ? savedFont : Self.defaultFontSize
         // neden default true: otomatik geçiş daha akıcı hissettiriyor — isteyen kapatır
         autoAdvance = defaults.object(forKey: Keys.autoAdvance) as? Bool ?? true
         isMuted = defaults.bool(forKey: Keys.muted)
-        let savedRate = defaults.object(forKey: Keys.speechRate) as? Double ?? Self.defaultRate
+        let savedRate =
+            defaults.object(forKey: Keys.speechRate) as? Double
+            ?? Self.defaultRate
         speechRate = min(max(savedRate, Self.minRate), Self.maxRate)
-        accent = TTSAccent(rawValue: defaults.string(forKey: Keys.accent) ?? "") ?? .british
+        accent =
+            TTSAccent(rawValue: defaults.string(forKey: Keys.accent) ?? "")
+            ?? .british
 
         // Kaydedilmiş tercihleri TTS servisine uygula
         tts.baseRate = speechRate
-        tts.setLocale(accent.isEnglish ? accent.locale : TTSAccent.british.locale)
+        tts.setLocale(
+            accent.isEnglish ? accent.locale : TTSAccent.british.locale
+        )
     }
 
     // ── Tema ───────────────────────────────────────────────────────────────
@@ -141,7 +152,10 @@ final class AppSettings {
     var speechRate: Double {
         didSet {
             let clamped = min(max(speechRate, Self.minRate), Self.maxRate)
-            if clamped != speechRate { speechRate = clamped; return }
+            if clamped != speechRate {
+                speechRate = clamped
+                return
+            }
             defaults.set(speechRate, forKey: Keys.speechRate)
             // neden: speakWord için de baz hız güncellenmeli
             tts.baseRate = speechRate
@@ -163,7 +177,9 @@ final class AppSettings {
     }
 
     private var lastEnglishAccent: TTSAccent {
-        let saved = TTSAccent(rawValue: defaults.string(forKey: Keys.lastEnglishAccent) ?? "")
+        let saved = TTSAccent(
+            rawValue: defaults.string(forKey: Keys.lastEnglishAccent) ?? ""
+        )
         guard let saved, saved.isEnglish else { return .british }
         return saved
     }

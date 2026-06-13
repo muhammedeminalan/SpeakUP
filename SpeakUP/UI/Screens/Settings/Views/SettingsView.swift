@@ -92,7 +92,9 @@ struct SettingsView: View {
                         get: { Double(settings.fontSize) },
                         set: { settings.fontSize = Int($0.rounded()) }
                     ),
-                    in: Double(AppSettings.minFontSize)...Double(AppSettings.maxFontSize),
+                    in: Double(
+                        AppSettings.minFontSize
+                    )...Double(AppSettings.maxFontSize),
                     step: Double(AppSettings.fontStep)
                 )
                 .tint(AppTheme.primary)
@@ -128,8 +130,11 @@ struct SettingsView: View {
                             .appFont(AppConstants.fontS, weight: .bold)
                             .foregroundStyle(AppTheme.primary)
                     }
-                    Slider(value: $settings.speechRate, in: AppSettings.minRate...AppSettings.maxRate)
-                        .tint(AppTheme.primary)
+                    Slider(
+                        value: $settings.speechRate,
+                        in: AppSettings.minRate...AppSettings.maxRate
+                    )
+                    .tint(AppTheme.primary)
                     HStack {
                         Text("Yavaş")
                         Spacer()
@@ -144,10 +149,14 @@ struct SettingsView: View {
 
             sectionCard {
                 VStack(spacing: 0) {
-                    ForEach(Array(TTSAccent.allCases.enumerated()), id: \.element) { index, accent in
+                    ForEach(
+                        Array(TTSAccent.allCases.enumerated()),
+                        id: \.element
+                    ) { index, accent in
                         if index != 0 { tileDivider() }
                         selectionTile(
-                            icon: accent == .british ? "globe" : "person.wave.2.fill",
+                            icon: accent == .british
+                                ? "globe" : "person.wave.2.fill",
                             label: "\(accent.flag)  \(accent.label) Aksanı",
                             subtitle: accent.detail,
                             isSelected: settings.accent == accent
@@ -209,8 +218,11 @@ struct SettingsView: View {
 
     // neden Bundle: versiyon/build bilgisi hardcode kalmasın
     private var appVersionText: String {
-        let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0"
-        let build = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "1"
+        let version =
+            Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
+            ?? "1.0"
+        let build =
+            Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "1"
         return "v\(version)+\(build)"
     }
 
@@ -229,10 +241,14 @@ struct SettingsView: View {
         Spacer().frame(height: AppConstants.paddingXXL)
     }
 
-    private func sectionCard(@ViewBuilder content: () -> some View) -> some View {
+    private func sectionCard(@ViewBuilder content: () -> some View) -> some View
+    {
         content()
             .frame(maxWidth: .infinity)
-            .background(AppTheme.surfaceContainer, in: RoundedRectangle(cornerRadius: AppConstants.radiusL))
+            .background(
+                AppTheme.surfaceContainer,
+                in: RoundedRectangle(cornerRadius: AppConstants.radiusL)
+            )
             .padding(.horizontal, AppConstants.paddingL)
     }
 
@@ -245,10 +261,14 @@ struct SettingsView: View {
     private func iconBox(icon: String, isActive: Bool) -> some View {
         Image(systemName: icon)
             .font(.system(size: 18))
-            .foregroundStyle(isActive ? AppTheme.primary : AppTheme.onSurfaceVariant)
+            .foregroundStyle(
+                isActive ? AppTheme.primary : AppTheme.onSurfaceVariant
+            )
             .frame(width: 36, height: 36)
             .background(
-                isActive ? AppTheme.primary.opacity(0.2) : AppTheme.onSurface.opacity(0.08),
+                isActive
+                    ? AppTheme.primary.opacity(0.2)
+                    : AppTheme.onSurface.opacity(0.08),
                 in: RoundedRectangle(cornerRadius: AppConstants.radiusS)
             )
     }
@@ -272,9 +292,13 @@ struct SettingsView: View {
                         .foregroundStyle(AppTheme.onSurfaceVariant)
                 }
                 Spacer()
-                Image(systemName: isSelected ? "checkmark.circle.fill" : "circle")
-                    .font(.system(size: 20))
-                    .foregroundStyle(isSelected ? AppTheme.primary : AppTheme.onSurfaceVariant)
+                Image(
+                    systemName: isSelected ? "checkmark.circle.fill" : "circle"
+                )
+                .font(.system(size: 20))
+                .foregroundStyle(
+                    isSelected ? AppTheme.primary : AppTheme.onSurfaceVariant
+                )
             }
             .padding(.horizontal, AppConstants.paddingL)
             .padding(.vertical, 14)
